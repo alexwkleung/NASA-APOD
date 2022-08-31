@@ -4,7 +4,7 @@
 
 Fetching the APOD API from NASA.
 
-# Installation
+# Local Setup
 
 Clone the repository 
 
