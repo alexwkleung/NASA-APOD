@@ -38,7 +38,7 @@ npm run server
 
 # API Key
 
-You can use the demo key if you don't want to sign up for a developer key.
+You can use the demo key if you don't want to sign up for a [developer key](https://api.nasa.gov/).
 
 In `index.ts`, change 
 
