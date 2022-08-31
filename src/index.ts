@@ -3,10 +3,10 @@ import config from './key.js'
 async function apodFetch() {
     try {
         //apod api url
-        const url = "https://api.nasa.gov/planetary/apod?api_key=";
+        const url: string = "https://api.nasa.gov/planetary/apod?api_key=";
 
         //api key (switch to generated api key later)
-        const api_key = config.API_KEY;
+        const api_key: string = config.API_KEY;
 
         //fetch apod api (client-side fetching only - not handled by server)
         const response = await fetch(`${url}${api_key}`);
