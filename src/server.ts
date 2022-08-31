@@ -2,7 +2,6 @@ import * as dotenv from 'dotenv'
 dotenv.config();
 import express from 'express'
 const app = express();
-
 import mainRoute from './routes/main-route.js'
 
 //listen on port
