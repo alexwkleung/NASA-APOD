@@ -1,5 +1,13 @@
 import config from './key.js'
 
+//dataTypes interface
+interface dataTypes {
+    title: string, 
+    date: string,
+    url: string, 
+    explanation: string
+}
+
 async function apodFetch() {
     try {
         //apod api url
@@ -12,7 +20,7 @@ async function apodFetch() {
         const response = await fetch(`${url}${api_key}`);
 
         //fetched api data gets parsed into json format
-        const data = await response.json();
+        const data: dataTypes = await response.json();
 
         //outputData takes in parsed api data as arguments to display data
         outputData(data);
@@ -23,7 +31,7 @@ async function apodFetch() {
 }
 
 //display the data to html elements from the fetched api
-const outputData = (data: { title: string, date: string, url: string, explanation: string }) => {
+const outputData = (data: dataTypes) => {
     (document.getElementById('title') as HTMLElement).insertAdjacentHTML('afterbegin', data.title);
     (document.getElementById('date') as HTMLElement).insertAdjacentHTML('afterbegin', data.date);
     (document.getElementById('picture') as HTMLImageElement).src = data.url;

@@ -12,6 +12,4 @@ router.get('/', (req, res) => {
 })
 
 //serve build directory
-router.use('/', express.static(process.cwd() + '/build'));
-
-router.use('/', express.static(process.cwd() + './key.js'));
+router.use(express.static(process.cwd() + '/build'));
