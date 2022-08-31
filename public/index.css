@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url('./fonts/Inter-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url('./fonts/Inter-Bold.ttf');
+}
+
+body {
+    background-color: grey;
+}
+
+#main-title {
+    font-family: 'Inter-Bold', 'sans-serif';
+    text-align: center;
+}
+
+#title {
+    font-family: 'Inter-Bold', 'sans-serif';
+    text-align: center;
+}
+
+#date {
+    font-family: 'Inter-Regular', 'sans-serif';
+    text-align: center;
+}
+
+#picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#explanation {
+    font-family: 'Inter-Regular', 'sans-serif';
+    text-align: center;
+    width: 1064px;
+}

@@ -1,0 +1,33 @@
+{
+  "name": "nasa-apod",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc --build --clean && tsc",
+    "server": "nodemon build/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexwkleung/NASA-APOD.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexwkleung/NASA-APOD/issues"
+  },
+  "homepage": "https://github.com/alexwkleung/NASA-APOD#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "typescript": "^4.8.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^18.7.14",
+    "@types/node-fetch": "^2.6.2",
+    "dotenv": "^16.0.2",
+    "node-fetch": "^3.2.10",
+    "nodemon": "^2.0.19"
+  }
+}
