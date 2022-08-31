@@ -55,7 +55,7 @@ const api_key: string = 'DEMO_KEY';
 Otherwise, create a `key.ts` file containing an object with your developer key. Note that this is **unsafe**, and it is preferred that you store it on the server-side using an environment (`.env`) file instead. If you are using this method, make sure to ignore the `key.ts` file in your `.gitignore`.
 
 ```bash
-cd NASA-APOD/src
+cd NASA-APOD/src/api
 
 touch key.ts
 ```
@@ -70,7 +70,7 @@ const config = {
 export default config;
 ```
 
-Import your key
+Import your key in `index.ts`
 
 ```ts
 import config from './key.js'
