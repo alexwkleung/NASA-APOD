@@ -13,7 +13,7 @@ async function apodFetch() {
         //apod api url
         const url: string = "https://api.nasa.gov/planetary/apod?api_key=";
 
-        //api key (switch to generated api key later)
+        //api key
         const api_key: string = config.API_KEY;
 
         //fetch apod api (client-side fetching only - not handled by server)
