@@ -8,6 +8,15 @@ interface dataTypes {
     explanation: string
 }
 
+//display the data to html elements from the fetched api
+const outputData = (data: dataTypes) => {
+    (document.getElementById('title') as HTMLElement).insertAdjacentHTML('afterbegin', data.title);
+    (document.getElementById('date') as HTMLElement).insertAdjacentHTML('afterbegin', data.date);
+    (document.getElementById('picture') as HTMLImageElement).src = data.url;
+    (document.getElementById('explanation') as HTMLElement).insertAdjacentHTML('afterbegin', data.explanation);
+}
+
+//function to fetch api
 async function apodFetch() {
     try {
         //apod api url
@@ -28,13 +37,5 @@ async function apodFetch() {
         //catch any exceptions; log to error stream
         console.error(error);
     }
-}
-
-//display the data to html elements from the fetched api
-const outputData = (data: dataTypes) => {
-    (document.getElementById('title') as HTMLElement).insertAdjacentHTML('afterbegin', data.title);
-    (document.getElementById('date') as HTMLElement).insertAdjacentHTML('afterbegin', data.date);
-    (document.getElementById('picture') as HTMLImageElement).src = data.url;
-    (document.getElementById('explanation') as HTMLElement).insertAdjacentHTML('afterbegin', data.explanation);
 }
 apodFetch();
