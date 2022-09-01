@@ -2,7 +2,7 @@
 
 ![screenshot](/img/screenshot.png)
 
-Fetching the APOD API from NASA.
+Fetching the APOD API data from NASA.
 
 # Local Setup
 
