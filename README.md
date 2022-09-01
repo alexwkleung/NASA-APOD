@@ -18,6 +18,22 @@ Change directory
 cd NASA-APOD
 ```
 
+Create environent (`.env`) file
+
+```bash 
+touch .env
+```
+
+Add port to `.env` file
+
+```bash
+echo PORT=3000 >> .env
+
+#or manually type in port
+
+PORT=3000
+```
+
 Install npm dependencies
 
 ```bash
